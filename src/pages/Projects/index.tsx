@@ -3,38 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { Section } from "@/components/common/section";
-
-const projects = [
-  {
-    title: "Financy",
-    descriptionKey: "projects.items.financy.description",
-    tags: ["React", "TypeScript", "GraphQL", "Node.js", "Prisma", "PostgreSQL", "TailwindCSS"],
-    demoUrl: null,
-    codeUrl: "https://github.com/ThiagoSilvaMorato/financy",
-  },
-  {
-    title: "Brevly",
-    descriptionKey: "projects.items.brevly.description",
-    tags: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Fastify",
-      "PostgreSQL",
-      "Drizzle ORM",
-      "TailwindCSS",
-    ],
-    demoUrl: null,
-    codeUrl: "https://github.com/ThiagoSilvaMorato/brevly",
-  },
-  {
-    title: "Todo App",
-    descriptionKey: "projects.items.todo.description",
-    tags: ["React", "TypeScript", "Vite", "TailwindCSS", "React Router", "LocalStorage"],
-    demoUrl: "https://todo-list-thiago-morato.vercel.app/",
-    codeUrl: "https://github.com/ThiagoSilvaMorato/todo-list",
-  },
-] as const;
+import { projects } from "./constants/projects";
 
 export function Projects() {
   const { t } = useTranslation();
@@ -56,7 +25,7 @@ export function Projects() {
               key={project.title}
               className='group relative overflow-hidden rounded-2xl glass-panel neon-border p-7 transition-transform hover:-translate-y-1'
             >
-              <div className='absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 transition-opacity group-hover:opacity-100' />
+              <div className='absolute inset-x-0 -top-px h-px bg-linear-to-r from-transparent via-primary to-transparent opacity-0 transition-opacity group-hover:opacity-100' />
 
               <h2 className='font-title text-2xl font-bold text-foreground group-hover:neon-text'>
                 {project.title}

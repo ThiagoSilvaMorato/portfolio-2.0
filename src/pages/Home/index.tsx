@@ -1,34 +1,12 @@
-import SiGithub from "@icons-pack/react-simple-icons/icons/SiGithub";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import perfil from "@/assets/perfil.jpeg";
-import { LinkedinIcon } from "@/components/ui/icons/linkedin";
 import { Text } from "@/components/ui/text";
-
-const stack = ["TypeScript", "React", "Node.js", "NestJS", "Angular", "Next.js", "SQL", "Git"];
-
-const stats = [
-  { value: "4+", tKey: "home.stats.yearsExperience" },
-  { value: "10+", tKey: "home.stats.projects" },
-  { value: "React", tKey: "home.stats.frontend" },
-  { value: "Node.js", tKey: "home.stats.backend" },
-] as const;
-
-const socials = [
-  { href: "mailto:thiagosmorato@gmail.com", label: "E-mail", Icon: Mail },
-  {
-    href: "https://github.com/ThiagoSilvaMorato",
-    label: "GitHub",
-    Icon: SiGithub,
-  },
-  {
-    href: "https://www.linkedin.com/in/thiago-silva-morato/",
-    label: "LinkedIn",
-    Icon: LinkedinIcon,
-  },
-] as const;
+import { socials } from "./constants/socials";
+import { stack } from "./constants/stack";
+import { stats } from "./constants/stats";
 
 export function Home() {
   const { t } = useTranslation();

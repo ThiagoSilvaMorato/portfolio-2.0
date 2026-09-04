@@ -1,9 +1,5 @@
 import { useEffect, useRef } from "react";
-
-const GLOW_HALF = 150;
-const EASING = 0.08;
-const GRID_PARALLAX = 30;
-const SETTLE_PX = 0.1;
+import { EASING, GLOW_HALF, GRID_PARALLAX, SETTLE_PX } from "./constants/motion";
 
 export function NeonCursorField() {
   const glowRef = useRef<HTMLDivElement>(null);

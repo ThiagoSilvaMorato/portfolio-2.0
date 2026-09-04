@@ -1,15 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Link, NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { LangSwitch } from "./lang-switch";
+import { LangSwitch } from "../lang-switch";
+import { navLinks } from "./constants/nav-links";
 
 export function SiteNav() {
   const { t } = useTranslation();
-  const links = [
-    { to: "/", label: t("nav.home"), end: true },
-    { to: "/about", label: t("nav.about"), end: false },
-    { to: "/projects", label: t("nav.projects"), end: false },
-  ] as const;
 
   return (
     <header className='sticky top-0 z-40 border-b border-border/60 glass-panel'>
@@ -19,7 +15,7 @@ export function SiteNav() {
         </Link>
         <div className='flex flex-wrap items-center gap-3'>
           <ul className='flex flex-wrap items-center gap-1 text-sm tracking-widest uppercase'>
-            {links.map((link) => (
+            {navLinks.map((link) => (
               <li key={link.to}>
                 <NavLink
                   to={link.to}
@@ -31,7 +27,7 @@ export function SiteNav() {
                     )
                   }
                 >
-                  {link.label}
+                  {t(link.labelKey)}
                 </NavLink>
               </li>
             ))}
