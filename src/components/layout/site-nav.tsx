@@ -5,7 +5,10 @@ import { LangSwitch } from "./lang-switch";
 
 export function SiteNav() {
   const { t } = useTranslation();
-  const links = [{ to: "/", label: t("nav.home"), end: true }] as const;
+  const links = [
+    { to: "/", label: t("nav.home"), end: true },
+    { to: "/about", label: t("nav.about"), end: false },
+  ] as const;
 
   return (
     <header className='sticky top-0 z-40 border-b border-border/60 glass-panel'>

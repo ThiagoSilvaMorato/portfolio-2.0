@@ -1,6 +1,7 @@
 {
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "about": "About"
   },
   "home": {
     "eyebrow": "Full Stack Developer",
@@ -14,6 +15,31 @@
       "frontend": "Frontend",
       "backend": "Backend"
     }
+  },
+  "about": {
+    "eyebrow": "WHO'S BEHIND THE KEYBOARD",
+    "title": "About me",
+    "description": "Learn about Thiago Morato's journey from frontend development to full stack engineering, his approach to technology, and his continuous pursuit of growth.",
+    "paragraphs": [
+      "I'm a Full Stack Developer with 4+ years of professional experience, specializing in building scalable and reliable web applications. My background is rooted in frontend engineering with React, Angular and TypeScript, combined with growing expertise in backend development with Node.js.",
+      "Throughout my career, I've taken on increasing ownership across the development lifecycle — from designing user-focused interfaces to making technical decisions, integrating services and contributing to software architecture. I value clean, maintainable code and pragmatic solutions that balance technical quality with real business impact.",
+      "I've completed the Pós Tech Developer 360 at Faculdade de Tecnologia Rocketseat and I'm currently pursuing a degree in Engenharia de IA Aplicada at UNIPDS, continuously expanding my perspective across software engineering and artificial intelligence.",
+      "AI has also become an integral part of my development workflow. I use it to accelerate research, development and problem-solving, while keeping engineering judgment, code quality and architectural decisions at the center of the process."
+    ],
+    "timeline": [
+      {
+        "year": "2022",
+        "description": "Started my professional career at Dart Digital, focusing primarily on frontend development with React, Angular and TypeScript."
+      },
+      {
+        "year": "2024–2025",
+        "description": "Gradually took on responsibilities and challenges beyond my official Junior role, working with greater ownership and making broader technical decisions."
+      },
+      {
+        "year": "Now",
+        "description": "Expanding my expertise beyond frontend development through backend engineering with Node.js, while deepening my knowledge of software architecture and AI."
+      }
+    ]
   },
   "notFound": {
     "code": "404",

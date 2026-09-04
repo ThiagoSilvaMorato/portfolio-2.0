@@ -1,6 +1,7 @@
 {
   "nav": {
-    "home": "Início"
+    "home": "Início",
+    "about": "Sobre"
   },
   "home": {
     "eyebrow": "Desenvolvedor Full Stack",
@@ -14,6 +15,31 @@
       "frontend": "Frontend",
       "backend": "Backend"
     }
+  },
+  "about": {
+    "eyebrow": "QUEM ESTÁ POR TRÁS DO TECLADO",
+    "title": "Sobre mim",
+    "description": "Conheça a trajetória de Thiago Morato do desenvolvimento frontend à engenharia full stack, sua abordagem para tecnologia e sua busca contínua por crescimento.",
+    "paragraphs": [
+      "Sou Desenvolvedor Full Stack com mais de 4 anos de experiência profissional, especializado na construção de aplicações web escaláveis e confiáveis. Minha base vem da engenharia frontend com React, Angular e TypeScript, combinada com uma expertise crescente em desenvolvimento backend com Node.js.",
+      "Ao longo da minha carreira, assumi cada vez mais responsabilidade em todo o ciclo de desenvolvimento — desde o design de interfaces focadas no usuário até a tomada de decisões técnicas, integração de serviços e contribuição para a arquitetura de software. Valorizo código limpo e sustentável e soluções pragmáticas que equilibram qualidade técnica com impacto real para o negócio.",
+      "Concluí a Pós Tech Developer 360 na Faculdade de Tecnologia Rocketseat e atualmente curso Engenharia de IA Aplicada na UNIPDS, ampliando continuamente minha visão sobre engenharia de software e inteligência artificial.",
+      "A IA também se tornou parte essencial do meu fluxo de desenvolvimento. Uso-a para acelerar pesquisa, desenvolvimento e resolução de problemas, mantendo o julgamento técnico, a qualidade do código e as decisões de arquitetura no centro do processo."
+    ],
+    "timeline": [
+      {
+        "year": "2022",
+        "description": "Iniciei minha carreira profissional na Dart Digital, focando principalmente em desenvolvimento frontend com React, Angular e TypeScript."
+      },
+      {
+        "year": "2024–2025",
+        "description": "Assumi gradualmente responsabilidades e desafios além do meu cargo oficial de Júnior, atuando com maior autonomia e tomando decisões técnicas mais amplas."
+      },
+      {
+        "year": "Agora",
+        "description": "Expandindo minha atuação além do frontend por meio da engenharia backend com Node.js, aprofundando meu conhecimento em arquitetura de software e IA."
+      }
+    ]
   },
   "notFound": {
     "code": "404",
