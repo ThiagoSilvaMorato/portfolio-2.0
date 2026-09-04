@@ -2,7 +2,9 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "projects": "Projects"
+    "projects": "Projects",
+    "chat": "Ask The AI",
+    "contact": "Contact"
   },
   "home": {
     "eyebrow": "Full Stack Developer",
@@ -43,8 +45,8 @@
     ]
   },
   "projects": {
-    "eyebrow": "Projects",
-    "title": "Personal projects",
+    "eyebrow": "What I've built",
+    "title": "Projects",
     "description": "A selection of personal projects built with modern frontend and backend technologies.",
     "code": "Code",
     "demo": "Demo",
@@ -59,6 +61,28 @@
         "description": "A simple task management application that allows users to create and delete tasks, featuring simulated API calls, loading states and local persistence with localStorage."
       }
     }
+  },
+  "contact": {
+    "eyebrow": "Let's connect",
+    "title": "Contact",
+    "description": "Get in touch with Thiago Morato through email, LinkedIn or GitHub.",
+    "location": "São Paulo, Brazil"
+  },
+  "chat": {
+    "eyebrow": "AI Assistant",
+    "title": "Ask the AI",
+    "description": "Chat with an AI trained with information about me: career, skills, projects and experience.",
+    "assistant": "AI Assistant",
+    "status": "In development",
+    "greeting": "Hi, I'm Thiago's AI assistant! Ask me anything about his experience, skills or projects.",
+    "maintenance": "This feature is still under construction — soon I'll be able to answer with real information. Thanks for your patience!",
+    "suggestions": [
+      "What technologies does he use?",
+      "Tell me about his experience",
+      "What projects has he built?"
+    ],
+    "placeholder": "Type your message...",
+    "send": "Send"
   },
   "notFound": {
     "code": "404",
