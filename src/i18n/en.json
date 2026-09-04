@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "projects": "Projects"
   },
   "home": {
     "eyebrow": "Full Stack Developer",
@@ -40,6 +41,24 @@
         "description": "Expanding my expertise beyond frontend development through backend engineering with Node.js, while deepening my knowledge of software architecture and AI."
       }
     ]
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Personal projects",
+    "description": "A selection of personal projects built with modern frontend and backend technologies.",
+    "code": "Code",
+    "demo": "Demo",
+    "items": {
+      "financy": {
+        "description": "A full-stack personal finance management application that allows users to track income and expenses through custom categories."
+      },
+      "brevly": {
+        "description": "A full-stack URL shortening platform that allows users to create customized short links, track access counts and export shortened URLs as CSV files."
+      },
+      "todo": {
+        "description": "A simple task management application that allows users to create and delete tasks, featuring simulated API calls, loading states and local persistence with localStorage."
+      }
+    }
   },
   "notFound": {
     "code": "404",

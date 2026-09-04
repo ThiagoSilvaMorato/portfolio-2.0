@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Início",
-    "about": "Sobre"
+    "about": "Sobre",
+    "projects": "Projetos"
   },
   "home": {
     "eyebrow": "Desenvolvedor Full Stack",
@@ -40,6 +41,24 @@
         "description": "Expandindo minha atuação além do frontend por meio da engenharia backend com Node.js, aprofundando meu conhecimento em arquitetura de software e IA."
       }
     ]
+  },
+  "projects": {
+    "eyebrow": "Projetos",
+    "title": "Projetos pessoais",
+    "description": "Uma seleção de projetos pessoais construídos com tecnologias modernas de frontend e backend.",
+    "code": "Código",
+    "demo": "Demo",
+    "items": {
+      "financy": {
+        "description": "Uma aplicação full-stack de gestão financeira pessoal que permite acompanhar receitas e despesas por meio de categorias personalizadas."
+      },
+      "brevly": {
+        "description": "Uma plataforma full-stack de encurtamento de URLs que permite criar links curtos personalizados, acompanhar o número de acessos e exportar as URLs encurtadas em arquivos CSV."
+      },
+      "todo": {
+        "description": "Uma aplicação simples de gerenciamento de tarefas que permite criar e excluir tarefas, com chamadas de API simuladas, estados de carregamento e persistência local via localStorage."
+      }
+    }
   },
   "notFound": {
     "code": "404",

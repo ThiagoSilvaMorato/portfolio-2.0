@@ -8,6 +8,7 @@ export function SiteNav() {
   const links = [
     { to: "/", label: t("nav.home"), end: true },
     { to: "/about", label: t("nav.about"), end: false },
+    { to: "/projects", label: t("nav.projects"), end: false },
   ] as const;
 
   return (
