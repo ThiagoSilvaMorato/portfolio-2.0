@@ -1,0 +1,13 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "home": {
+    "eyebrow": "DESENVOLVEDOR FULL STACK",
+    "headline": "EU TRANSFORMO IDEIAS EM PRODUTOS QUE RODAM.",
+    "name": "Thiago Morato"
+  },
+  "notFound": {
+    "code": "404",
+    "message": "Página não encontrada",
+    "backHome": "Voltar ao início"
+  }
+}

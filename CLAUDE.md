@@ -34,6 +34,15 @@ Boas práticas obrigatórias para este projeto (React 19 + Vite + TS + Tailwind 
 
 - Rota nova em `src/router.tsx`. Navegação interna com `<Link>` / `useNavigate`, nunca `<a href>`.
 
+## i18n (Paraglide JS)
+
+- Locales: `en` (base) e `pt-BR`. Estratégia: `localStorage → preferredLanguage → baseLocale` (sem locale na URL).
+- **Nenhum texto visível hardcoded.** Toda string de UI vem de `m["contexto.chave"]()` (`import { m } from "@/paraglide/messages"`).
+- Mensagens agrupadas por tela/contexto em `messages/en.json` e `messages/pt-BR.json` (objeto aninhado: `{ home: { ... }, notFound: { ... } }`). Acesso sempre por bracket notation: `m["home.headline"]()`.
+- `pt-BR.json` deve ter exatamente as mesmas chaves que `en.json`.
+- `src/paraglide/` é **gerado** (git-ignored). Recompila via `npm run paraglide` (roda sozinho no `dev`, `build` e `postinstall`).
+- Datas/números/moeda sempre via `Intl.*` com o locale de `getLocale()`, nunca formato fixo.
+
 ## Antes de concluir
 
 - `npm run build` e `npm run lint` passam sem erro.

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "home": {
+    "eyebrow": "FULL STACK DEVELOPER",
+    "headline": "I TURN IDEAS INTO PRODUCTS THAT SHIP.",
+    "name": "Thiago Morato"
+  },
+  "notFound": {
+    "code": "404",
+    "message": "Page not found",
+    "backHome": "Back to home"
+  }
+}
