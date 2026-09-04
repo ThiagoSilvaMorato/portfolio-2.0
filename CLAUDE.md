@@ -34,14 +34,15 @@ Boas práticas obrigatórias para este projeto (React 19 + Vite + TS + Tailwind 
 
 - Rota nova em `src/router.tsx`, como filha da rota de layout (`RootLayout` em `src/components/layout/`, que renderiza `<SiteNav />` + `<Outlet />`). Navegação interna com `<Link>` / `<NavLink>` / `useNavigate`, nunca `<a href>`.
 
-## i18n (Paraglide JS)
+## i18n (i18next + react-i18next)
 
-- Locales: `en` (base) e `pt-BR`. Estratégia: `localStorage → preferredLanguage → baseLocale` (sem locale na URL).
-- **Nenhum texto visível hardcoded.** Toda string de UI vem de `m["contexto.chave"]()` (`import { m } from "@/paraglide/messages"`).
-- Mensagens agrupadas por tela/contexto em `messages/en.json` e `messages/pt-BR.json` (objeto aninhado: `{ home: { ... }, notFound: { ... } }`). Acesso sempre por bracket notation: `m["home.headline"]()`.
-- `pt-BR.json` deve ter exatamente as mesmas chaves que `en.json`.
-- `src/paraglide/` é **gerado** (git-ignored). Recompila via `npm run paraglide` (roda sozinho no `dev`, `build` e `postinstall`).
-- Datas/números/moeda sempre via `Intl.*` com o locale de `getLocale()`, nunca formato fixo.
+- Locales: `en` (fallback) e `pt-BR`. Detecção: `localStorage → navigator` (chave `locale`), persiste no `localStorage`. Sem locale na URL.
+- Config em `src/i18n/index.ts`; carregada uma vez via `import "@/i18n"` no `main.tsx`.
+- **Nenhum texto visível hardcoded.** Toda string de UI vem de `t("contexto.chave")` do hook `useTranslation()` (`react-i18next`).
+- Mensagens agrupadas por tela/contexto em `src/i18n/en.json` e `src/i18n/pt-BR.json` (objeto aninhado: `{ nav: {...}, home: {...}, notFound: {...} }`). Chaves das duas devem ser idênticas.
+- Tipagem de `t()` vem de `src/i18n/i18next.d.ts` (augmenta `CustomTypeOptions` com base no `en.json`) — chave errada é erro de build.
+- Troca de idioma: `i18n.changeLanguage(locale)` (reativo, sem reload) — ver `LangSwitch`. `<html lang>` é sincronizado no listener `languageChanged` do config.
+- Datas/números/moeda sempre via `Intl.*` com `i18n.resolvedLanguage`, nunca formato fixo.
 
 ## Antes de concluir
 
