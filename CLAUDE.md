@@ -17,6 +17,8 @@ Boas práticas obrigatórias para este projeto (React 19 + Vite + TS + Tailwind 
 - `ui/` = primitivos sem regra de negócio. Composições em `common/`, moldura em `layout/`, views em `pages/`. Dependência só para trás: `ui/ ← common/ ← layout/ ← pages/`.
 - Componente específico de uma página fica junto da página, não em `components/`.
 - Evite `!` (non-null assertion); prefira `?? padrão` ou narrowing.
+- Ícones: `lucide-react` para UI; marcas em `@icons-pack/react-simple-icons` (import por subpath: `.../icons/SiX`, default export). Marca que a lib não tem (ex.: LinkedIn) vira SVG local em `src/components/ui/icons/`.
+- Listas repetidas de markup (stats, links sociais…) viram array de dados + `.map`, não blocos copiados.
 
 ## Estilo
 
@@ -32,7 +34,8 @@ Boas práticas obrigatórias para este projeto (React 19 + Vite + TS + Tailwind 
 
 ## Rotas
 
-- Rota nova em `src/router.tsx`, como filha da rota de layout (`RootLayout` em `src/components/layout/`, que renderiza `<SiteNav />` + `<Outlet />`). Navegação interna com `<Link>` / `<NavLink>` / `useNavigate`, nunca `<a href>`.
+- Rota nova em `src/router.tsx`, como filha da rota de layout (`RootLayout` em `src/components/layout/`, que renderiza `<SiteNav />` + `<Outlet />`). Navegação interna com `<Link>` / `<NavLink>` / `useNavigate`, nunca `<a href>` (link externo/`mailto:` pode `<a>`).
+- Metadados por página: `<Helmet>` (`react-helmet-async`); o `<HelmetProvider>` fica no `App`. `title`/`description` via `t(...)`.
 
 ## i18n (i18next + react-i18next)
 

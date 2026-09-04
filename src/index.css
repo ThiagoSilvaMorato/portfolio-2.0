@@ -297,17 +297,6 @@
   }
 }
 
-/* Brilho neon para texto (tone="title" em <Text>). */
-@layer components {
-  .neon-text-primary {
-    color: oklch(1 0 0);
-    text-shadow:
-      0 0 4px color-mix(in oklab, var(--primary) 75%, transparent),
-      0 0 14px color-mix(in oklab, var(--primary) 55%, transparent),
-      0 0 34px color-mix(in oklab, var(--primary) 40%, transparent);
-  }
-}
-
 /* Header (SiteNav) e seletor de idioma (LangSwitch). */
 @utility glass-panel {
   background: color-mix(in oklab, var(--card) 55%, transparent);
@@ -357,5 +346,34 @@
   .lang-scan {
     animation: none;
     opacity: 0;
+  }
+}
+
+/* Home: flutuação suave da foto + halo atrás dela. */
+@utility float-soft {
+  animation: float-soft 6s ease-in-out infinite;
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-photo-glow {
+  background: radial-gradient(
+    circle at 30% 20%,
+    var(--primary),
+    transparent 60%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-soft {
+    animation: none;
   }
 }

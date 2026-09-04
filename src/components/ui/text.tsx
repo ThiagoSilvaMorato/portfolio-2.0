@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const textVariants = cva("", {
   variants: {
     variant: {
-      h1: "text-5xl font-bold tracking-tight text-balance sm:text-6xl",
+      h1: "text-4xl leading-tight sm:text-6xl",
       h2: "text-4xl font-semibold tracking-tight",
       h3: "text-3xl font-semibold tracking-tight",
       h4: "text-2xl font-semibold tracking-tight",
@@ -18,7 +18,7 @@ const textVariants = cva("", {
     tone: {
       simple: "font-body text-muted-foreground",
       neon: "font-body text-accent",
-      title: "font-title neon-text-primary tracking-wider",
+      title: "font-title neon-text font-black uppercase",
     },
   },
   defaultVariants: {

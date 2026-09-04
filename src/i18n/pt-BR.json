@@ -3,9 +3,17 @@
     "home": "Início"
   },
   "home": {
-    "eyebrow": "DESENVOLVEDOR FULL STACK",
-    "headline": "EU TRANSFORMO IDEIAS EM PRODUTOS QUE RODAM.",
-    "name": "Thiago Morato"
+    "eyebrow": "Desenvolvedor Full Stack",
+    "headline": "Construindo\nExperiências Web\nEscaláveis",
+    "description": "Desenvolvedor Full Stack construindo aplicações escaláveis com React, Node.js e TypeScript.",
+    "ctaProjects": "Ver projetos",
+    "ctaContact": "Entrar em contato",
+    "stats": {
+      "yearsExperience": "Anos de experiência",
+      "projects": "Projetos",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    }
   },
   "notFound": {
     "code": "404",

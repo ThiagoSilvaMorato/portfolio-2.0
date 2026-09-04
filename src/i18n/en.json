@@ -3,9 +3,17 @@
     "home": "Home"
   },
   "home": {
-    "eyebrow": "FULL STACK DEVELOPER",
-    "headline": "I TURN IDEAS INTO PRODUCTS THAT SHIP.",
-    "name": "Thiago Morato"
+    "eyebrow": "Full Stack Developer",
+    "headline": "Building\nScalable Web\nExperiences",
+    "description": "Full Stack Developer building scalable applications with React, Node.js and TypeScript.",
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch",
+    "stats": {
+      "yearsExperience": "Years experience",
+      "projects": "Projects",
+      "frontend": "Frontend",
+      "backend": "Backend"
+    }
   },
   "notFound": {
     "code": "404",
