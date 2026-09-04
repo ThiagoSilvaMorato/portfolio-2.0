@@ -32,7 +32,7 @@ Boas práticas obrigatórias para este projeto (React 19 + Vite + TS + Tailwind 
 
 ## Rotas
 
-- Rota nova em `src/router.tsx`. Navegação interna com `<Link>` / `useNavigate`, nunca `<a href>`.
+- Rota nova em `src/router.tsx`, como filha da rota de layout (`RootLayout` em `src/components/layout/`, que renderiza `<SiteNav />` + `<Outlet />`). Navegação interna com `<Link>` / `<NavLink>` / `useNavigate`, nunca `<a href>`.
 
 ## i18n (Paraglide JS)
 

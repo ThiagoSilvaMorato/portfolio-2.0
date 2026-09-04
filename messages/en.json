@@ -1,5 +1,8 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
+  "nav": {
+    "home": "Home"
+  },
   "home": {
     "eyebrow": "FULL STACK DEVELOPER",
     "headline": "I TURN IDEAS INTO PRODUCTS THAT SHIP.",

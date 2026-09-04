@@ -307,3 +307,55 @@
       0 0 34px color-mix(in oklab, var(--primary) 40%, transparent);
   }
 }
+
+/* Header (SiteNav) e seletor de idioma (LangSwitch). */
+@utility glass-panel {
+  background: color-mix(in oklab, var(--card) 55%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+@utility neon-border {
+  border: 1px solid color-mix(in oklab, var(--primary) 45%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--accent) 10%, transparent),
+    0 0 30px -10px color-mix(in oklab, var(--primary) 70%, transparent),
+    inset 0 0 30px -20px color-mix(in oklab, var(--accent) 80%, transparent);
+}
+
+@utility neon-text {
+  text-shadow:
+    0 0 12px color-mix(in oklab, var(--primary) 60%, transparent),
+    0 0 42px color-mix(in oklab, var(--accent) 30%, transparent);
+}
+
+.lang-scan {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -45%;
+  width: 40%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    color-mix(in oklab, var(--accent) 25%, transparent),
+    transparent
+  );
+  animation: lang-scan 4.5s ease-in-out infinite;
+}
+
+@keyframes lang-scan {
+  0% {
+    left: -45%;
+  }
+  60%,
+  100% {
+    left: 110%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lang-scan {
+    animation: none;
+    opacity: 0;
+  }
+}
