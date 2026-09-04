@@ -2,7 +2,9 @@
   "nav": {
     "home": "Início",
     "about": "Sobre",
-    "projects": "Projetos"
+    "projects": "Projetos",
+    "chat": "Pergunte à IA",
+    "contact": "Contato"
   },
   "home": {
     "eyebrow": "Desenvolvedor Full Stack",
@@ -43,8 +45,8 @@
     ]
   },
   "projects": {
-    "eyebrow": "Projetos",
-    "title": "Projetos pessoais",
+    "eyebrow": "O que eu construí",
+    "title": "Projetos",
     "description": "Uma seleção de projetos pessoais construídos com tecnologias modernas de frontend e backend.",
     "code": "Código",
     "demo": "Demo",
@@ -59,6 +61,28 @@
         "description": "Uma aplicação simples de gerenciamento de tarefas que permite criar e excluir tarefas, com chamadas de API simuladas, estados de carregamento e persistência local via localStorage."
       }
     }
+  },
+  "contact": {
+    "eyebrow": "Vamos nos conectar",
+    "title": "Contato",
+    "description": "Entre em contato com Thiago Morato por e-mail, LinkedIn ou GitHub.",
+    "location": "São Paulo, Brasil"
+  },
+  "chat": {
+    "eyebrow": "IA assistente",
+    "title": "Pergunte sobre mim",
+    "description": "Converse com uma IA treinada com informações sobre mim: carreira, habilidades, projetos e experiência.",
+    "assistant": "Assistente de IA",
+    "status": "Em desenvolvimento",
+    "greeting": "Oi! Sou o assistente de IA do Thiago. Pergunte sobre experiência, habilidades ou projetos.",
+    "maintenance": "Essa funcionalidade ainda está em construção — em breve vou poder responder com informações reais. Obrigado pela paciência!",
+    "suggestions": [
+      "Quais tecnologias ele usa?",
+      "Fale sobre a experiência dele",
+      "Quais projetos ele já construiu?"
+    ],
+    "placeholder": "Digite sua mensagem...",
+    "send": "Enviar"
   },
   "notFound": {
     "code": "404",
