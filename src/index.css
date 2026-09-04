@@ -141,37 +141,35 @@
   .neon-scan {
     position: absolute;
     inset-inline: 0;
-    top: 0;
-    height: 2px;
+    top: -40vh;
+    height: 40vh;
     opacity: 0;
     background: linear-gradient(
-      to right,
+      to bottom,
       transparent,
-      color-mix(in oklab, var(--accent) 75%, transparent) 25%,
-      color-mix(in oklab, var(--accent) 92%, transparent) 50%,
-      color-mix(in oklab, var(--accent) 75%, transparent) 75%,
+      color-mix(in oklab, var(--accent) 12%, transparent),
+      color-mix(in oklab, var(--primary) 6%, transparent),
       transparent
     );
-    box-shadow: 0 0 12px color-mix(in oklab, var(--accent) 55%, transparent);
-    animation: neon-scan 7s linear infinite;
+    animation: neon-scan 9s ease-in-out infinite;
   }
 
   .neon-ring {
     position: absolute;
     left: 50%;
-    top: 32%;
-    height: 18rem;
-    width: 18rem;
-    margin-left: -9rem;
-    margin-top: -9rem;
+    top: 45%;
+    height: 20vmax;
+    width: 20vmax;
+    margin-left: -10vmax;
+    margin-top: -10vmax;
     border-radius: 9999px;
     border: 1px solid color-mix(in oklab, var(--primary) 45%, transparent);
     opacity: 0;
-    animation: neon-ring 6s ease-out infinite;
+    animation: neon-ring 12s ease-out infinite;
   }
   .neon-ring--2 {
-    animation-delay: 3s;
-    border-color: color-mix(in oklab, var(--accent) 40%, transparent);
+    animation-delay: 6s;
+    border-color: color-mix(in oklab, var(--accent) 45%, transparent);
   }
 
   .neon-glitch {
@@ -184,56 +182,57 @@
       transparent 3px,
       color-mix(in oklab, var(--accent) 16%, transparent) 4px
     );
-    animation: neon-glitch 9s steps(1, end) infinite;
+    animation: neon-glitch 14s steps(1, end) infinite;
   }
 
   .neon-beam {
     position: absolute;
-    top: -20%;
-    height: 140%;
-    width: 12rem;
+    height: 2px;
+    width: 60vw;
+    border-radius: 9999px;
+    filter: blur(1px);
     opacity: 0;
     will-change: transform, opacity;
-    transform: rotate(18deg) translateX(-140%);
-    background: linear-gradient(
-      to right,
-      transparent,
-      color-mix(in oklab, var(--primary) 45%, transparent) 50%,
-      transparent
-    );
-    animation: neon-beam 14s ease-in-out infinite;
+    animation: neon-beam 11s linear infinite;
   }
   .neon-beam--1 {
-    left: 8%;
+    top: 18%;
+    left: -30vw;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
   }
   .neon-beam--2 {
-    left: 42%;
-    animation-delay: 5s;
-    background: linear-gradient(
-      to right,
-      transparent,
-      color-mix(in oklab, var(--accent) 38%, transparent) 50%,
-      transparent
-    );
+    top: 55%;
+    left: -40vw;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    animation-duration: 16s;
+    animation-delay: 2s;
   }
   .neon-beam--3 {
-    left: 72%;
-    width: 8rem;
-    animation-delay: 9s;
+    top: 82%;
+    left: -20vw;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in oklab, var(--primary) 55%, var(--accent)),
+      transparent
+    );
+    animation-duration: 14s;
+    animation-delay: 5s;
   }
 }
 
 @keyframes neon-scan {
   0% {
-    transform: translateY(-10vh);
+    transform: translateY(0);
     opacity: 0;
   }
   8%,
-  92% {
-    opacity: 0.9;
+  55% {
+    opacity: 1;
   }
+  70%,
   100% {
-    transform: translateY(110vh);
+    transform: translateY(160vh);
     opacity: 0;
   }
 }
@@ -243,54 +242,47 @@
     transform: scale(0.2);
     opacity: 0;
   }
-  12% {
-    opacity: 0.55;
+  10% {
+    opacity: 0.5;
   }
+  45%,
   100% {
-    transform: scale(2.6);
+    transform: scale(3.2);
     opacity: 0;
   }
 }
 
 @keyframes neon-glitch {
   0%,
-  47%,
-  51%,
-  73%,
-  75%,
+  96%,
   100% {
     opacity: 0;
-    transform: translateX(0);
   }
-  48% {
-    opacity: 0.5;
-    transform: translateX(-2px);
+  96.5% {
+    opacity: 0.35;
   }
-  49% {
-    opacity: 0.15;
-    transform: translateX(2px);
+  97% {
+    opacity: 0;
   }
-  50% {
-    opacity: 0.5;
-    transform: translateX(-1px);
+  97.5% {
+    opacity: 0.25;
   }
-  74% {
-    opacity: 0.4;
-    transform: translateX(2px);
+  98% {
+    opacity: 0;
   }
 }
 
 @keyframes neon-beam {
   0% {
-    transform: rotate(18deg) translateX(-140%);
+    transform: translateX(-20vw);
     opacity: 0;
   }
-  15%,
-  85% {
-    opacity: 0.5;
+  10%,
+  90% {
+    opacity: 0.7;
   }
   100% {
-    transform: rotate(18deg) translateX(140%);
+    transform: translateX(160vw);
     opacity: 0;
   }
 }
@@ -301,10 +293,7 @@
   .neon-glitch,
   .neon-beam {
     animation: none;
-  }
-  .neon-beam {
-    opacity: 0.2;
-    transform: rotate(18deg);
+    opacity: 0;
   }
 }
 
