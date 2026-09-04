@@ -6,18 +6,24 @@ import { cn } from "@/lib/utils";
 const textVariants = cva("", {
   variants: {
     variant: {
-      h1: "text-4xl font-bold tracking-tight text-balance sm:text-5xl",
-      h2: "text-3xl font-semibold tracking-tight",
-      h3: "text-2xl font-semibold tracking-tight",
-      h4: "text-xl font-semibold tracking-tight",
-      p: "text-base leading-7",
-      lead: "text-xl leading-8 text-muted-foreground",
-      small: "text-sm font-medium leading-none",
-      muted: "text-sm text-muted-foreground",
+      h1: "text-5xl font-bold tracking-tight text-balance sm:text-6xl",
+      h2: "text-4xl font-semibold tracking-tight",
+      h3: "text-3xl font-semibold tracking-tight",
+      h4: "text-2xl font-semibold tracking-tight",
+      p: "text-lg leading-8",
+      lead: "text-2xl leading-9",
+      small: "text-base font-medium leading-none",
+      muted: "text-base",
+    },
+    tone: {
+      simple: "font-body text-muted-foreground",
+      neon: "font-body text-accent",
+      title: "font-title neon-text-primary tracking-wider",
     },
   },
   defaultVariants: {
     variant: "p",
+    tone: "simple",
   },
 });
 
@@ -33,24 +39,20 @@ const VARIANT_ELEMENT = {
 } as const;
 
 type TextVariant = keyof typeof VARIANT_ELEMENT;
+type TextTone = NonNullable<VariantProps<typeof textVariants>["tone"]>;
 
-type TextProps = Omit<ComponentPropsWithoutRef<"p">, "title"> &
+type TextProps = ComponentPropsWithoutRef<"p"> &
   VariantProps<typeof textVariants> & {
     as?: ElementType;
-    title?: boolean;
   };
 
-function Text({ className, variant = "p", as, title = false, ...props }: TextProps) {
+function Text({ className, variant = "p", tone, as, ...props }: TextProps) {
   const Comp = as ?? VARIANT_ELEMENT[variant!];
 
   return (
-    <Comp
-      data-slot='text'
-      className={cn(textVariants({ variant }), title ? "font-title" : "font-body", className)}
-      {...props}
-    />
+    <Comp data-slot='text' className={cn(textVariants({ variant, tone }), className)} {...props} />
   );
 }
 
 export { Text, textVariants };
-export type { TextProps, TextVariant };
+export type { TextProps, TextVariant, TextTone };

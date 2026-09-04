@@ -307,3 +307,14 @@
     transform: rotate(18deg);
   }
 }
+
+/* Brilho neon para texto (tone="title" em <Text>). */
+@layer components {
+  .neon-text-primary {
+    color: oklch(1 0 0);
+    text-shadow:
+      0 0 4px color-mix(in oklab, var(--primary) 75%, transparent),
+      0 0 14px color-mix(in oklab, var(--primary) 55%, transparent),
+      0 0 34px color-mix(in oklab, var(--primary) 40%, transparent);
+  }
+}
