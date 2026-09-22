@@ -9,15 +9,7 @@ export const projects = [
   {
     title: "Brevly",
     descriptionKey: "projects.items.brevly.description",
-    tags: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Fastify",
-      "PostgreSQL",
-      "Drizzle ORM",
-      "TailwindCSS",
-    ],
+    tags: ["React", "TypeScript", "Node.js", "Fastify", "PostgreSQL", "Drizzle ORM", "TailwindCSS"],
     demoUrl: null,
     codeUrl: "https://github.com/ThiagoSilvaMorato/brevly",
   },

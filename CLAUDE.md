@@ -47,6 +47,14 @@ Boas práticas obrigatórias para este projeto (React 19 + Vite + TS + Tailwind 
 - Troca de idioma: `i18n.changeLanguage(locale)` (reativo, sem reload) — ver `LangSwitch`. `<html lang>` é sincronizado no listener `languageChanged` do config.
 - Datas/números/moeda sempre via `Intl.*` com `i18n.resolvedLanguage`, nunca formato fixo.
 
+## API / Serverless (`api/`)
+
+- Vercel Functions. Cada arquivo direto em `api/` vira rota; `_lib/` e `_knowledge/` (prefixo `_`) são ignorados pelo roteamento — código e dados de apoio.
+- Web Handler: `export async function POST(request: Request): Promise<Response>`. Runtime Node padrão (não setar `edge`). `export const config = { maxDuration }` para o limite.
+- Não é coberto por `tsc -b`. Type-check próprio: `npx tsc -p api/tsconfig.json` (a Vercel também valida no deploy).
+- Segredos só via env **sem** prefixo `VITE_` (senão vazam no bundle). Documentar em `.env.example`; valor real em `.env.local` (ignorado) e no painel da Vercel.
+- Chatbot: base de conhecimento em `api/_knowledge/{en,pt-BR}.json` (mesmos `id`/`topic` nas duas línguas, como o i18n). Retrieval Tier 1 (palavra-chave, sem embeddings/DB) em `api/_lib/retrieval.ts`; gate `MIN_SCORE` decide se chama a IA.
+
 ## Antes de concluir
 
 - `npm run build` e `npm run lint` passam sem erro.

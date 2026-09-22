@@ -39,3 +39,43 @@ npm run lint     # oxlint
 ```bash
 npx shadcn@latest add button
 ```
+
+## Chatbot (`/chat`)
+
+A tela `/chat` conversa com uma IA gratuita (OpenRouter) que só responde com base
+numa base de conhecimento sobre o Thiago. Roda como **Vercel Function** — a API key
+nunca chega no navegador.
+
+```
+api/
+  chat.ts              POST /api/chat  (único endpoint)
+  _lib/                config, retrieval (Tier 1 por palavra-chave), prompt, cliente OpenRouter
+  _knowledge/          en.json / pt-BR.json  ← os fatos sobre o Thiago (mesmos id/topic nas 2 línguas)
+```
+
+Fluxo: `retrieve()` pontua os chunks por palavra-chave; se nada passa de `MIN_SCORE`
+(gate de confiança), responde "não tenho informação suficiente" **sem chamar a IA**.
+Se passa, monta o prompt com os chunks relevantes + os marcados `always` e chama o
+modelo, que é instruído a devolver `NO_MATCH` se o contexto não responder.
+
+### Variáveis de ambiente
+
+Copie `.env.example` para `.env.local` (ignorado pelo Git) e preencha. Em produção,
+configure as mesmas no painel da Vercel. **Nunca** use prefixo `VITE_` nelas.
+
+| Var | Obrigatória | Uso |
+| --- | --- | --- |
+| `OPENROUTER_API_KEY` | sim | key de <https://openrouter.ai/keys> |
+| `OPENROUTER_MODEL` | não | id de modelo `:free`; fallback no código |
+| `OPENROUTER_SITE_URL` / `OPENROUTER_SITE_NAME` | não | atribuição no OpenRouter |
+| `ALLOWED_ORIGIN` | não | trava `/api/chat` no seu domínio |
+
+### Rodar localmente
+
+`npm run dev` já serve o endpoint `/api/chat` — um plugin em [`vite.config.ts`](vite.config.ts)
+(`devApi`) roda a function `api/chat.ts` dentro do dev server do Vite, lendo o `.env.local`.
+Não precisa de `vercel dev` para desenvolver. Erros da IA aparecem no terminal do Vite
+(`[dev-api]` / `OpenRouter <status> ...`). Editou algo em `api/`? O Vite recarrega sozinho.
+
+Em produção quem serve `/api/chat` é a Vercel Function real; o plugin só roda em `serve`.
+

@@ -7,9 +7,9 @@
     "contact": "Contact"
   },
   "home": {
-    "eyebrow": "Full Stack Developer",
+    "eyebrow": "Frontend Developer",
     "headline": "Building\nScalable Web\nExperiences",
-    "description": "Full Stack Developer building scalable applications with React, Node.js and TypeScript.",
+    "description": "Frontend Developer building scalable applications with React, Node.js and TypeScript.",
     "ctaProjects": "View projects",
     "ctaContact": "Get in touch",
     "stats": {
@@ -22,9 +22,9 @@
   "about": {
     "eyebrow": "WHO'S BEHIND THE KEYBOARD",
     "title": "About me",
-    "description": "Learn about Thiago Morato's journey from frontend development to full stack engineering, his approach to technology, and his continuous pursuit of growth.",
+    "description": "Learn about Thiago Morato's journey as a Frontend Developer, his approach to technology, and his continuous pursuit of growth.",
     "paragraphs": [
-      "I'm a Full Stack Developer with 4+ years of professional experience, specializing in building scalable and reliable web applications. My background is rooted in frontend engineering with React, Angular and TypeScript, combined with growing expertise in backend development with Node.js.",
+      "I'm a Frontend Developer with 4+ years of professional experience, specializing in building scalable and reliable web applications. My background is rooted in frontend engineering with React, Angular and TypeScript, combined with growing expertise in backend development with Node.js.",
       "Throughout my career, I've taken on increasing ownership across the development lifecycle — from designing user-focused interfaces to making technical decisions, integrating services and contributing to software architecture. I value clean, maintainable code and pragmatic solutions that balance technical quality with real business impact.",
       "I've completed the Pós Tech Developer 360 at Faculdade de Tecnologia Rocketseat and I'm currently pursuing a degree in Engenharia de IA Aplicada at UNIPDS, continuously expanding my perspective across software engineering and artificial intelligence.",
       "AI has also become an integral part of my development workflow. I use it to accelerate research, development and problem-solving, while keeping engineering judgment, code quality and architectural decisions at the center of the process."
@@ -35,7 +35,7 @@
         "description": "Started my professional career at Dart Digital, focusing primarily on frontend development with React, Angular and TypeScript."
       },
       {
-        "year": "2024–2025",
+        "year": "2024",
         "description": "Gradually took on responsibilities and challenges beyond my official Junior role, working with greater ownership and making broader technical decisions."
       },
       {
@@ -75,12 +75,9 @@
     "assistant": "AI Assistant",
     "status": "In development",
     "greeting": "Hi, I'm Thiago's AI assistant! Ask me anything about his experience, skills or projects.",
-    "maintenance": "This feature is still under construction — soon I'll be able to answer with real information. Thanks for your patience!",
-    "suggestions": [
-      "What technologies does he use?",
-      "Tell me about his experience",
-      "What projects has he built?"
-    ],
+    "noInfo": "I don't have enough information about that in my knowledge base yet. Try asking about Thiago's experience, skills or projects.",
+    "error": "Something went wrong reaching the assistant. Please try again in a moment.",
+    "suggestions": ["What technologies does he use?", "Tell me about his experience"],
     "placeholder": "Type your message...",
     "send": "Send"
   },

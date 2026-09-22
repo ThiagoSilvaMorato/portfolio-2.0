@@ -7,9 +7,9 @@
     "contact": "Contato"
   },
   "home": {
-    "eyebrow": "Desenvolvedor Full Stack",
+    "eyebrow": "Desenvolvedor Frontend",
     "headline": "Construindo\nExperiências Web\nEscaláveis",
-    "description": "Desenvolvedor Full Stack construindo aplicações escaláveis com React, Node.js e TypeScript.",
+    "description": "Desenvolvedor Frontend construindo aplicações escaláveis com React, Node.js e TypeScript.",
     "ctaProjects": "Ver projetos",
     "ctaContact": "Entrar em contato",
     "stats": {
@@ -35,7 +35,7 @@
         "description": "Iniciei minha carreira profissional na Dart Digital, focando principalmente em desenvolvimento frontend com React, Angular e TypeScript."
       },
       {
-        "year": "2024–2025",
+        "year": "2024",
         "description": "Assumi gradualmente responsabilidades e desafios além do meu cargo oficial de Júnior, atuando com maior autonomia e tomando decisões técnicas mais amplas."
       },
       {
@@ -75,12 +75,9 @@
     "assistant": "Assistente de IA",
     "status": "Em desenvolvimento",
     "greeting": "Oi! Sou o assistente de IA do Thiago. Pergunte sobre experiência, habilidades ou projetos.",
-    "maintenance": "Essa funcionalidade ainda está em construção — em breve vou poder responder com informações reais. Obrigado pela paciência!",
-    "suggestions": [
-      "Quais tecnologias ele usa?",
-      "Fale sobre a experiência dele",
-      "Quais projetos ele já construiu?"
-    ],
+    "noInfo": "Ainda não tenho informações suficientes sobre isso na minha base de conhecimento. Tente perguntar sobre a experiência, as habilidades ou os projetos do Thiago.",
+    "error": "Algo deu errado ao falar com o assistente. Tente de novo em instantes.",
+    "suggestions": ["Quais tecnologias ele usa?", "Fale sobre a experiência dele"],
     "placeholder": "Digite sua mensagem...",
     "send": "Enviar"
   },

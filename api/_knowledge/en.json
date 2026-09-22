@@ -1,0 +1,742 @@
+[
+  {
+    "id": "about-identity",
+    "topic": "about",
+    "text": "Thiago Silva Morato is a software engineer with more than four years of professional experience, primarily focused on frontend engineering with React, Angular, and TypeScript.",
+    "keywords": [
+      "Thiago Morato",
+      "Thiago Silva Morato",
+      "software engineer",
+      "frontend engineer",
+      "frontend developer",
+      "React developer",
+      "TypeScript developer"
+    ],
+    "always": true
+  },
+  {
+    "id": "about-career-direction",
+    "topic": "about",
+    "text": "Thiago is expanding his backend and software architecture knowledge with the goal of becoming a stronger full-stack engineer.",
+    "keywords": [
+      "full stack",
+      "full-stack engineer",
+      "backend",
+      "software architecture",
+      "career goals",
+      "professional growth"
+    ],
+    "always": true
+  },
+  {
+    "id": "about-engineering-mindset",
+    "topic": "about",
+    "text": "Thiago approaches software engineering with a focus on solving problems, creating scalable solutions, and delivering meaningful value to customers.",
+    "keywords": [
+      "engineering mindset",
+      "problem solving",
+      "scalability",
+      "customer value",
+      "software engineering",
+      "impact"
+    ],
+    "always": true
+  },
+  {
+    "id": "languages",
+    "topic": "about",
+    "text": "Thiago's native language is Portuguese (Brazil) and he has advanced/fluent proficiency in English, able to work, write and communicate professionally in English.",
+    "keywords": [
+      "languages",
+      "language",
+      "English",
+      "Portuguese",
+      "fluent English",
+      "advanced English",
+      "English level",
+      "English proficiency",
+      "level of English",
+      "speak English",
+      "does he speak English",
+      "communicate in English",
+      "native Portuguese",
+      "native language",
+      "mother tongue",
+      "second language",
+      "bilingual",
+      "idiomas",
+      "nível de inglês",
+      "fala inglês"
+    ]
+  },
+  {
+    "id": "career-dart-digital",
+    "topic": "career",
+    "text": "Thiago has worked as a software engineer at Dart Digital in Ribeirão Preto, São Paulo, since June 2022.",
+    "keywords": [
+      "Dart Digital",
+      "software engineer",
+      "career",
+      "work experience",
+      "June 2022",
+      "Ribeirão Preto"
+    ]
+  },
+  {
+    "id": "career-software-house",
+    "topic": "career",
+    "text": "Working at a software house exposed Thiago to different teams, clients, products, and technical contexts.",
+    "keywords": [
+      "software house",
+      "clients",
+      "teams",
+      "different projects",
+      "consulting",
+      "adaptability"
+    ]
+  },
+  {
+    "id": "career-growth",
+    "topic": "career",
+    "text": "Thiago progressed from Junior Developer to Mid-level Developer during his professional career.",
+    "keywords": [
+      "career progression",
+      "Junior Developer",
+      "Mid-level Developer",
+      "promotion",
+      "professional growth"
+    ]
+  },
+  {
+    "id": "career-graphql-tailwind",
+    "topic": "career",
+    "text": "At Dart Digital, Thiago has professional experience building product features with GraphQL (including Apollo) on the API layer and Tailwind CSS for styling, alongside React, Angular and TypeScript.",
+    "keywords": [
+      "GraphQL",
+      "Apollo",
+      "Tailwind CSS",
+      "Tailwind",
+      "Dart Digital",
+      "professional experience",
+      "API",
+      "styling",
+      "frontend"
+    ]
+  },
+  {
+    "id": "career-dart-saas",
+    "topic": "career",
+    "text": "At Dart Digital, Thiago contributed to a SaaS platform for external clients, helping deliver its first production-ready version and supporting the onboarding of the product's first paying customer.",
+    "keywords": [
+      "SaaS",
+      "SaaS platform",
+      "external clients",
+      "first paying customer",
+      "production release",
+      "product delivery"
+    ]
+  },
+  {
+    "id": "career-dart-redesign",
+    "topic": "career",
+    "text": "Thiago led the redesign of an evaluation-cycle tracking flow at Dart Digital, consolidating six fragmented listing pages into a single performance-oriented interface that improved usability and simplified monitoring for users.",
+    "keywords": [
+      "redesign",
+      "UX redesign",
+      "consolidation",
+      "performance",
+      "listing pages",
+      "evaluation cycles",
+      "leadership",
+      "frontend"
+    ]
+  },
+  {
+    "id": "career-dart-recaptcha",
+    "topic": "career",
+    "text": "Thiago implemented an authentication flow with invisible (silent) reCAPTCHA at Dart Digital, strengthening security without adding friction to the user login experience.",
+    "keywords": [
+      "reCAPTCHA",
+      "silent reCAPTCHA",
+      "invisible reCAPTCHA",
+      "authentication",
+      "login",
+      "security",
+      "bot protection"
+    ]
+  },
+  {
+    "id": "career-dart-scope",
+    "topic": "career",
+    "text": "At Dart Digital, Thiago took ownership of feature design, architectural decisions, frontend performance optimizations and code reviews, contributing to the team's technical quality and consistency. He works remotely with a distributed Agile team.",
+    "keywords": [
+      "ownership",
+      "feature design",
+      "architectural decisions",
+      "code review",
+      "performance optimization",
+      "remote work",
+      "distributed team",
+      "Agile"
+    ]
+  },
+  {
+    "id": "skills-react-primary",
+    "topic": "skills",
+    "text": "React is Thiago's primary frontend technology and one of the main technologies in his professional development experience.",
+    "keywords": [
+      "React",
+      "React.js",
+      "React developer",
+      "frontend",
+      "primary technology",
+      "frontend engineer"
+    ],
+    "always": true
+  },
+  {
+    "id": "skills-angular",
+    "topic": "skills",
+    "text": "Thiago has significant professional experience with Angular and has used it extensively in frontend application development.",
+    "keywords": [
+      "Angular",
+      "Angular developer",
+      "frontend",
+      "TypeScript",
+      "professional experience",
+      "web development"
+    ]
+  },
+  {
+    "id": "skills-typescript",
+    "topic": "skills",
+    "text": "TypeScript is one of Thiago's main programming languages and is used extensively in his frontend development work.",
+    "keywords": ["TypeScript", "TS", "JavaScript", "frontend", "strong typing", "web development"]
+  },
+  {
+    "id": "skills-javascript",
+    "topic": "skills",
+    "text": "Thiago has specialized professionally in JavaScript and TypeScript.",
+    "keywords": [
+      "JavaScript",
+      "TypeScript",
+      "programming languages",
+      "frontend programming",
+      "web development"
+    ]
+  },
+  {
+    "id": "skills-nodejs-priority",
+    "topic": "skills",
+    "text": "Node.js is Thiago's primary backend technology and the main focus of his backend development learning and experience.",
+    "keywords": [
+      "Node.js",
+      "Node",
+      "backend",
+      "backend developer",
+      "JavaScript backend",
+      "full stack",
+      "API development"
+    ],
+    "always": true
+  },
+  {
+    "id": "skills-nodejs-frameworks",
+    "topic": "skills",
+    "text": "Thiago has studied and developed backend applications using Node.js frameworks and technologies including NestJS, Express.js, and Fastify.",
+    "keywords": [
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "ExpressJS",
+      "Fastify",
+      "backend",
+      "REST API",
+      "API development"
+    ]
+  },
+  {
+    "id": "skills-dotnet",
+    "topic": "skills",
+    "text": "Thiago has studied .NET Core as part of his effort to expand his backend development knowledge, but Node.js is his primary backend technology.",
+    "keywords": [
+      ".NET Core",
+      ".NET",
+      "backend",
+      "backend studies",
+      "Node.js",
+      "backend technologies"
+    ]
+  },
+  {
+    "id": "skills-software-architecture",
+    "topic": "skills",
+    "text": "Thiago has experience with micro frontend architecture and has been expanding his knowledge of software architecture.",
+    "keywords": [
+      "microfrontends",
+      "micro frontend",
+      "software architecture",
+      "frontend architecture",
+      "architecture",
+      "scalability"
+    ]
+  },
+  {
+    "id": "skills-styling",
+    "topic": "skills",
+    "text": "Thiago has experience with Styled Components, Sass, Tailwind CSS, and plain CSS for frontend styling.",
+    "keywords": [
+      "Styled Components",
+      "Sass",
+      "SCSS",
+      "Tailwind CSS",
+      "Tailwind",
+      "CSS",
+      "frontend styling",
+      "UI"
+    ]
+  },
+  {
+    "id": "skills-material-ui",
+    "topic": "skills",
+    "text": "Thiago has professional experience using Material UI to build React interfaces and reusable UI components.",
+    "keywords": [
+      "Material UI",
+      "MUI",
+      "React",
+      "React UI",
+      "components",
+      "frontend",
+      "design system"
+    ]
+  },
+  {
+    "id": "skills-shadcn",
+    "topic": "skills",
+    "text": "Thiago has experience using shadcn/ui to build modern and reusable React interfaces.",
+    "keywords": [
+      "shadcn",
+      "shadcn/ui",
+      "React",
+      "React UI",
+      "components",
+      "frontend",
+      "UI components"
+    ]
+  },
+  {
+    "id": "skills-graphql",
+    "topic": "skills",
+    "text": "Thiago has professional experience with GraphQL and Apollo for building and consuming APIs.",
+    "keywords": [
+      "GraphQL",
+      "Apollo",
+      "Apollo Client",
+      "API",
+      "query language",
+      "API development",
+      "backend"
+    ]
+  },
+  {
+    "id": "skills-nextjs",
+    "topic": "skills",
+    "text": "Thiago works with Next.js to build React applications.",
+    "keywords": ["Next.js", "NextJS", "React framework", "SSR", "frontend", "React"]
+  },
+  {
+    "id": "skills-state-forms",
+    "topic": "skills",
+    "text": "Thiago has experience with frontend state management and forms using Redux and React Hook Form.",
+    "keywords": [
+      "Redux",
+      "React Hook Form",
+      "state management",
+      "forms",
+      "global state",
+      "frontend"
+    ]
+  },
+  {
+    "id": "skills-databases",
+    "topic": "skills",
+    "text": "Thiago has worked with SQL relational databases and with MongoDB.",
+    "keywords": [
+      "SQL",
+      "database",
+      "databases",
+      "MongoDB",
+      "NoSQL",
+      "relational database",
+      "data persistence"
+    ]
+  },
+  {
+    "id": "skills-testing",
+    "topic": "skills",
+    "text": "Thiago has experience with automated testing and quality practices, including Jest, Vitest and Supertest, as well as TDD and BDD.",
+    "keywords": [
+      "testing",
+      "automated tests",
+      "Jest",
+      "Vitest",
+      "Supertest",
+      "TDD",
+      "BDD",
+      "test-driven development",
+      "quality"
+    ]
+  },
+  {
+    "id": "skills-tools",
+    "topic": "skills",
+    "text": "Thiago uses Git and GitHub for version control and has experience with Docker, Webpack and Jira.",
+    "keywords": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Webpack",
+      "Jira",
+      "version control",
+      "containers",
+      "build tools",
+      "tooling"
+    ]
+  },
+  {
+    "id": "skills-problem-solving",
+    "topic": "skills",
+    "text": "Thiago is comfortable investigating technical problems and implementing solutions designed to be scalable and maintainable.",
+    "keywords": [
+      "problem solving",
+      "debugging",
+      "scalability",
+      "maintainability",
+      "technical challenges",
+      "software engineering"
+    ]
+  },
+  {
+    "id": "skills-user-experience",
+    "topic": "skills",
+    "text": "Thiago considers user experience an important part of frontend engineering and aims to build responsive and easy-to-use interfaces.",
+    "keywords": ["UX", "user experience", "responsive interfaces", "usability", "frontend", "UI"]
+  },
+  {
+    "id": "skills-api-integration",
+    "topic": "skills",
+    "text": "Thiago has experience integrating frontend applications with backend APIs and handling asynchronous application data.",
+    "keywords": [
+      "API integration",
+      "REST API",
+      "frontend API",
+      "HTTP",
+      "asynchronous data",
+      "backend integration"
+    ]
+  },
+  {
+    "id": "skills-dynamic-forms",
+    "topic": "skills",
+    "text": "Thiago has implemented dynamic forms and selection interfaces in Angular applications based on data returned by backend endpoints.",
+    "keywords": [
+      "Angular forms",
+      "dynamic forms",
+      "forms",
+      "API data",
+      "checkboxes",
+      "frontend development"
+    ]
+  },
+  {
+    "id": "skills-data-tables",
+    "topic": "skills",
+    "text": "Thiago has worked with complex frontend data tables involving pagination, filtering, row selection, and API-driven data.",
+    "keywords": [
+      "data tables",
+      "tables",
+      "pagination",
+      "filtering",
+      "row selection",
+      "DataGrid",
+      "Material UI"
+    ]
+  },
+  {
+    "id": "challenge-table-selection",
+    "topic": "projects",
+    "text": "Thiago faced a frontend issue where selecting a row in a data table caused the selection state to reset because API-driven rerenders were recreating the table state.",
+    "keywords": [
+      "table selection",
+      "selection state",
+      "rerender",
+      "API calls",
+      "React table",
+      "DataGrid",
+      "frontend challenge"
+    ]
+  },
+  {
+    "id": "challenge-table-selection-solution",
+    "topic": "projects",
+    "text": "Thiago addressed the table selection problem by controlling the selection state explicitly instead of relying entirely on the table's internal state.",
+    "keywords": [
+      "controlled state",
+      "selection model",
+      "React state",
+      "DataGrid",
+      "table selection",
+      "state management"
+    ]
+  },
+  {
+    "id": "challenge-single-selection",
+    "topic": "projects",
+    "text": "Thiago implemented table behavior where only one checkbox could remain selected at a time, providing radio-button-like behavior while working with a checkbox-based interface.",
+    "keywords": [
+      "single selection",
+      "checkbox",
+      "radio button behavior",
+      "table selection",
+      "selection model",
+      "UI behavior"
+    ]
+  },
+  {
+    "id": "challenge-pdf-generation",
+    "topic": "projects",
+    "text": "Thiago investigated a production-environment issue where PDFs generated with jsPDF worked locally but were blank in the homologation environment.",
+    "keywords": [
+      "jsPDF",
+      "PDF",
+      "blank PDF",
+      "production issue",
+      "homologation",
+      "debugging",
+      "frontend challenge"
+    ]
+  },
+  {
+    "id": "challenge-pdf-generation-solution",
+    "topic": "projects",
+    "text": "Thiago investigated the blank PDF issue by analyzing environment differences and browser console errors related to insecure resource loading.",
+    "keywords": [
+      "jsPDF debugging",
+      "mixed content",
+      "insecure connection",
+      "browser console",
+      "production debugging",
+      "PDF generation"
+    ]
+  },
+  {
+    "id": "challenge-autocomplete-modal",
+    "topic": "projects",
+    "text": "Thiago worked on an issue involving a Material UI Autocomplete inside a modal where typing caused focus problems and unexpected modal behavior.",
+    "keywords": [
+      "Material UI",
+      "Autocomplete",
+      "modal",
+      "focus",
+      "React",
+      "UI bug",
+      "frontend challenge"
+    ]
+  },
+  {
+    "id": "challenge-file-upload",
+    "topic": "projects",
+    "text": "Thiago has implemented frontend functionality for selecting and uploading Excel files to backend endpoints.",
+    "keywords": [
+      "Excel upload",
+      "file upload",
+      "Angular",
+      "HTTP upload",
+      "multipart",
+      "backend endpoint"
+    ]
+  },
+  {
+    "id": "values-teamwork",
+    "topic": "values",
+    "text": "Thiago values collaboration and prefers to work together with the team when making technical and product decisions.",
+    "keywords": [
+      "teamwork",
+      "collaboration",
+      "team collaboration",
+      "working with teams",
+      "team player"
+    ]
+  },
+  {
+    "id": "values-constructive-discussion",
+    "topic": "values",
+    "text": "When Thiago disagrees with a technical or product decision, he prefers to discuss the reasoning with the team and work toward a better solution.",
+    "keywords": [
+      "technical discussion",
+      "disagreement",
+      "team discussion",
+      "collaboration",
+      "code review",
+      "decision making"
+    ]
+  },
+  {
+    "id": "values-customer-impact",
+    "topic": "values",
+    "text": "Thiago is more concerned with achieving the best outcome for the customer than with proving that his own idea is correct.",
+    "keywords": [
+      "customer value",
+      "customer impact",
+      "product impact",
+      "decision making",
+      "teamwork",
+      "ego-free engineering"
+    ]
+  },
+  {
+    "id": "values-ownership",
+    "topic": "values",
+    "text": "Thiago evaluates technical decisions based on their potential value and impact on the delivered product rather than personal preference.",
+    "keywords": [
+      "ownership",
+      "technical decisions",
+      "product value",
+      "impact",
+      "engineering judgment",
+      "customer outcome"
+    ]
+  },
+  {
+    "id": "values-adaptability",
+    "topic": "values",
+    "text": "Thiago developed adaptability by working with different teams, clients, projects, and technologies.",
+    "keywords": [
+      "adaptability",
+      "adaptable",
+      "different teams",
+      "different clients",
+      "different technologies",
+      "soft skills"
+    ]
+  },
+  {
+    "id": "values-fast-learning",
+    "topic": "values",
+    "text": "Thiago considers fast learning an important professional skill and actively expands his knowledge into backend development, architecture, and artificial intelligence.",
+    "keywords": [
+      "fast learner",
+      "continuous learning",
+      "backend",
+      "architecture",
+      "AI",
+      "professional development"
+    ]
+  },
+  {
+    "id": "values-scrum",
+    "topic": "values",
+    "text": "Thiago has professional experience working with Scrum and agile software development practices.",
+    "keywords": ["Scrum", "Agile", "agile methodology", "sprints", "software development"]
+  },
+  {
+    "id": "education-postgraduate-ai",
+    "topic": "education",
+    "text": "Thiago is pursuing a postgraduate degree focused on Applied AI Engineering.",
+    "keywords": [
+      "postgraduate",
+      "post-graduation",
+      "Applied AI Engineering",
+      "Artificial Intelligence",
+      "AI",
+      "education"
+    ]
+  },
+  {
+    "id": "education-full-stack",
+    "topic": "education",
+    "text": "Thiago has been expanding his backend development and software architecture knowledge as part of his transition toward full-stack engineering.",
+    "keywords": [
+      "full stack",
+      "backend studies",
+      "software architecture",
+      "backend development",
+      "career development"
+    ]
+  },
+  {
+    "id": "education-bachelor",
+    "topic": "education",
+    "text": "Thiago completed a Bachelor's degree at São Luís, in Jaboticabal, São Paulo, between January 2022 and January 2025.",
+    "keywords": [
+      "bachelor's degree",
+      "Bacharelado",
+      "graduation",
+      "São Luís",
+      "Jaboticabal",
+      "university",
+      "higher education"
+    ]
+  },
+  {
+    "id": "education-rocketseat-postgrad",
+    "topic": "education",
+    "text": "Thiago completed a postgraduate program (Pós Tech Developer 360) at Faculdade de Tecnologia Rocketseat, from January 2025 to January 2026.",
+    "keywords": [
+      "Rocketseat",
+      "Pós Tech",
+      "Developer 360",
+      "postgraduate",
+      "Faculdade de Tecnologia Rocketseat",
+      "specialization",
+      "education"
+    ]
+  },
+  {
+    "id": "certifications-list",
+    "topic": "education",
+    "text": "Thiago holds several certifications, most of them from Rocketseat: Ignite Node, Trilha Ignite React 2021, Trilha Ignite Node 2021, NLW AI, NLW Together and NLW Journey C#. He also completed an HTML/CSS/JavaScript/ReactJS course at Newtab Academy and a React course at Origamid.",
+    "keywords": [
+      "certifications",
+      "certificates",
+      "courses",
+      "Rocketseat",
+      "Ignite",
+      "NLW",
+      "Origamid",
+      "Newtab Academy",
+      "training"
+    ]
+  },
+  {
+    "id": "projects-portfolio-chatbot",
+    "topic": "projects",
+    "text": "Thiago's portfolio includes an AI chatbot that uses a RAG-oriented knowledge base to provide additional information about his professional profile.",
+    "keywords": [
+      "portfolio chatbot",
+      "AI chatbot",
+      "RAG",
+      "retrieval augmented generation",
+      "knowledge base",
+      "AI portfolio"
+    ]
+  },
+  {
+    "id": "contact-email",
+    "topic": "contact",
+    "text": "Thiago can be contacted by email at thiagosmorato@gmail.com.",
+    "keywords": ["email", "contact", "contact information", "reach Thiago", "thiagosmorato@gmail.com"]
+  },
+  {
+    "id": "contact-linkedin",
+    "topic": "contact",
+    "text": "Thiago's LinkedIn profile is available at https://www.linkedin.com/in/thiago-silva-morato/.",
+    "keywords": ["LinkedIn", "LinkedIn profile", "professional profile", "Thiago LinkedIn"]
+  },
+  {
+    "id": "contact-location",
+    "topic": "contact",
+    "text": "Thiago works in Ribeirão Preto, São Paulo, Brazil.",
+    "keywords": ["Ribeirão Preto", "São Paulo", "Brazil", "location", "work location"]
+  }
+]

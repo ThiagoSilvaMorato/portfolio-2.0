@@ -5,7 +5,8 @@ import { useTranslation } from "react-i18next";
 import { Section } from "@/components/common/section";
 import { useCurrentLocale } from "@/i18n";
 import { cn } from "@/lib/utils";
-import { RESPONSE_DELAY_MS } from "./constants/chat";
+import { MAX_QUESTION_LENGTH } from "./constants/chat";
+import { askAi } from "./lib/ask-ai";
 
 type Message = {
   id: string;
@@ -29,13 +30,13 @@ export function Chat() {
 
       <Section eyebrow={t("chat.eyebrow")} title={t("chat.title")}>
         {/* key força remontar a conversa (com nova saudação) quando o idioma muda. */}
-        <ChatWindow key={locale} />
+        <ChatWindow key={locale} locale={locale} />
       </Section>
     </>
   );
 }
 
-function ChatWindow() {
+function ChatWindow({ locale }: { locale: string }) {
   const { t } = useTranslation();
   const [messages, setMessages] = useState<Message[]>([
     { id: crypto.randomUUID(), author: "ai", text: t("chat.greeting") },
@@ -43,33 +44,43 @@ function ChatWindow() {
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const endRef = useRef<HTMLDivElement>(null);
-  const timeoutRef = useRef<number | null>(null);
+  const abortRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }, [messages, isTyping]);
 
   useEffect(() => {
-    return () => {
-      if (timeoutRef.current) window.clearTimeout(timeoutRef.current);
-    };
+    return () => abortRef.current?.abort();
   }, []);
 
   const send = (text: string) => {
     const question = text.trim();
     if (!question || isTyping) return;
 
-    setMessages((current) => [...current, { id: crypto.randomUUID(), author: "user", text: question }]);
+    const controller = new AbortController();
+    abortRef.current = controller;
+
+    setMessages((current) => [
+      ...current,
+      { id: crypto.randomUUID(), author: "user", text: question },
+    ]);
     setInput("");
     setIsTyping(true);
 
-    timeoutRef.current = window.setTimeout(() => {
+    void askAi(question, locale, controller.signal).then((result) => {
+      if (controller.signal.aborted) return;
+
+      const answer =
+        result.status === "answer"
+          ? result.text
+          : result.status === "no-match"
+            ? t("chat.noInfo")
+            : t("chat.error");
+
+      setMessages((current) => [...current, { id: crypto.randomUUID(), author: "ai", text: answer }]);
       setIsTyping(false);
-      setMessages((current) => [
-        ...current,
-        { id: crypto.randomUUID(), author: "ai", text: t("chat.maintenance") },
-      ]);
-    }, RESPONSE_DELAY_MS);
+    });
   };
 
   const suggestions = t("chat.suggestions", { returnObjects: true });
@@ -110,7 +121,7 @@ function ChatWindow() {
             </span>
             <p
               className={cn(
-                "max-w-[80%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
+                "max-w-[80%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed whitespace-pre-line",
                 message.author === "ai"
                   ? "rounded-bl-sm bg-secondary text-foreground"
                   : "rounded-br-sm bg-primary text-primary-foreground",
@@ -144,7 +155,8 @@ function ChatWindow() {
             key={suggestion}
             type='button'
             onClick={() => send(suggestion)}
-            className='inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-xs text-muted-foreground transition-colors hover:border-primary hover:text-primary'
+            disabled={isTyping}
+            className='inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-xs text-muted-foreground transition-colors hover:border-primary hover:text-primary disabled:opacity-50'
           >
             <Sparkles className='h-3 w-3' /> {suggestion}
           </button>
@@ -161,13 +173,15 @@ function ChatWindow() {
         <input
           value={input}
           onChange={(event) => setInput(event.target.value)}
+          maxLength={MAX_QUESTION_LENGTH}
           placeholder={t("chat.placeholder")}
           className='flex-1 rounded-xl bg-secondary px-4 py-2.5 text-sm text-foreground outline-none placeholder:text-muted-foreground focus:ring-1 focus:ring-primary'
         />
         <button
           type='submit'
           aria-label={t("chat.send")}
-          className='grid h-10 w-10 place-items-center rounded-xl bg-primary text-primary-foreground transition-transform hover:scale-105'
+          disabled={isTyping}
+          className='grid h-10 w-10 place-items-center rounded-xl bg-primary text-primary-foreground transition-transform hover:scale-105 disabled:opacity-50 disabled:hover:scale-100'
         >
           <Send className='h-4 w-4' />
         </button>

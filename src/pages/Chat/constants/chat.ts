@@ -1,2 +1,2 @@
-/** Atraso simulado antes da resposta da IA (ainda em manutenção, sem chamada real). */
-export const RESPONSE_DELAY_MS = 1200;
+/** Tamanho máximo da pergunta enviada ao assistente (espelha o limite da API). */
+export const MAX_QUESTION_LENGTH = 500;
