@@ -44,29 +44,37 @@ export async function POST(request: Request): Promise<Response> {
 
   const locale = payload.locale === "pt-BR" ? "pt-BR" : "en";
 
-  const retrieval = retrieve(question, getChunks(locale));
-  if (!retrieval.matched) {
-    return json({ answer: null, reason: "no_match" });
-  }
-
-  const systemPrompt = buildSystemPrompt(locale, retrieval.chunks);
-
-  let result;
+  // A partir daqui tudo entra no try: qualquer exceção (JSON de conhecimento
+  // malformado, bug de retrieval, etc.) vira um 500 nosso em vez de derrubar
+  // a function inteira (FUNCTION_INVOCATION_FAILED) sem log nenhum.
   try {
-    result = await complete(systemPrompt, question, request.signal);
+    const retrieval = retrieve(question, getChunks(locale));
+    if (!retrieval.matched) {
+      return json({ answer: null, reason: "no_match" });
+    }
+
+    const systemPrompt = buildSystemPrompt(locale, retrieval.chunks);
+
+    let result;
+    try {
+      result = await complete(systemPrompt, question, request.signal);
+    } catch (error) {
+      console.error("OpenRouter request failed:", error);
+      return json({ error: "upstream" }, 502);
+    }
+
+    if (!result.ok) {
+      const rateLimited = result.status === 429;
+      return json({ error: rateLimited ? "rate_limited" : "upstream" }, rateLimited ? 429 : 502);
+    }
+
+    if (!result.content || isNoMatch(result.content)) {
+      return json({ answer: null, reason: "no_match" });
+    }
+
+    return json({ answer: result.content });
   } catch (error) {
-    console.error("OpenRouter request failed:", error);
-    return json({ error: "upstream" }, 502);
+    console.error("Unhandled error in /api/chat:", error);
+    return json({ error: "internal" }, 500);
   }
-
-  if (!result.ok) {
-    const rateLimited = result.status === 429;
-    return json({ error: rateLimited ? "rate_limited" : "upstream" }, rateLimited ? 429 : 502);
-  }
-
-  if (!result.content || isNoMatch(result.content)) {
-    return json({ answer: null, reason: "no_match" });
-  }
-
-  return json({ answer: result.content });
 }

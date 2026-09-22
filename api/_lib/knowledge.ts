@@ -15,5 +15,6 @@ const BY_LOCALE: Record<string, KnowledgeChunk[]> = {
 };
 
 export function getChunks(locale: string): KnowledgeChunk[] {
-  return BY_LOCALE[locale] ?? BY_LOCALE.en;
+  const chunks = BY_LOCALE[locale] ?? BY_LOCALE.en;
+  return Array.isArray(chunks) ? chunks : [];
 }
