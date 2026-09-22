@@ -1,5 +1,5 @@
-import { NO_MATCH, OWNER_NAME } from "./config";
-import type { KnowledgeChunk } from "./knowledge";
+import { NO_MATCH, OWNER_NAME } from "./config.js";
+import type { KnowledgeChunk } from "./knowledge.js";
 
 const LANGUAGE_NAME: Record<string, string> = {
   en: "English",

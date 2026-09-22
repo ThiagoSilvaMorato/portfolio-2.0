@@ -1,8 +1,8 @@
-import { ALLOWED_ORIGIN, API_KEY, MAX_QUESTION_LENGTH, NO_MATCH } from "./_lib/config";
-import { getChunks } from "./_lib/knowledge";
-import { complete } from "./_lib/openrouter";
-import { buildSystemPrompt } from "./_lib/prompt";
-import { retrieve } from "./_lib/retrieval";
+import { ALLOWED_ORIGIN, API_KEY, MAX_QUESTION_LENGTH, NO_MATCH } from "./_lib/config.js";
+import { getChunks } from "./_lib/knowledge.js";
+import { complete } from "./_lib/openrouter.js";
+import { buildSystemPrompt } from "./_lib/prompt.js";
+import { retrieve } from "./_lib/retrieval.js";
 
 export const config = { maxDuration: 20 };
 

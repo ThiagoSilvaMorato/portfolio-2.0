@@ -1,5 +1,5 @@
-import { MAX_CONTEXT_CHUNKS, MIN_SCORE, TOP_K } from "./config";
-import type { KnowledgeChunk } from "./knowledge";
+import { MAX_CONTEXT_CHUNKS, MIN_SCORE, TOP_K } from "./config.js";
+import type { KnowledgeChunk } from "./knowledge.js";
 
 const STOPWORDS = new Set([
   // en

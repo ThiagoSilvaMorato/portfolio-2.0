@@ -6,7 +6,7 @@ import {
   SITE_NAME,
   SITE_URL,
   TEMPERATURE,
-} from "./config";
+} from "./config.js";
 
 export type OpenRouterResult = { ok: true; content: string } | { ok: false; status: number };
 
