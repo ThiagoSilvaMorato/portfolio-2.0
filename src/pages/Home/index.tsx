@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import perfil from "@/assets/perfil.jpeg";
 import { Text } from "@/components/ui/text";
-import { stack } from "@/lib/stack";
 import { socials } from "./constants/socials";
+import { stack } from "./constants/stack";
 import { stats } from "./constants/stats";
 
 export function Home() {
@@ -91,12 +91,12 @@ export function Home() {
       </div>
 
       <div className='mt-12 flex flex-wrap gap-2'>
-        {stack.map(({ name }) => (
+        {stack.map((technology) => (
           <span
-            key={name}
+            key={technology}
             className='rounded-full border border-border px-4 py-1.5 text-xs tracking-widest text-muted-foreground uppercase transition-colors hover:border-accent hover:text-accent'
           >
-            {name}
+            {technology}
           </span>
         ))}
       </div>
