@@ -1,4 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [{ "source": "/((?!api/|@|_|.*\\.).*)", "destination": "/index.html" }]
+  "rewrites": [{ "source": "/((?!api/|@|_|.*\\.).*)", "destination": "/index.html" }],
+  "functions": {
+    "api/chat.ts": {
+      "includeFiles": "api/_knowledge/**"
+    }
+  }
 }
