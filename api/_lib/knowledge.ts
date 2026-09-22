@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { buildStackExperienceChunks } from "./stack-knowledge.js";
 
 export type KnowledgeChunk = {
   id: string;
@@ -34,5 +35,6 @@ function loadKnowledgeFile(fileName: string): KnowledgeChunk[] {
 }
 
 export function getChunks(locale: string): KnowledgeChunk[] {
-  return loadKnowledgeFile(locale === "pt-BR" ? "pt-BR.json" : "en.json");
+  const staticChunks = loadKnowledgeFile(locale === "pt-BR" ? "pt-BR.json" : "en.json");
+  return [...staticChunks, ...buildStackExperienceChunks(locale)];
 }
