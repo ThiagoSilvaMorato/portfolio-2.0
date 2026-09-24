@@ -18,16 +18,12 @@ i18n
       en: { translation: en },
       "pt-BR": { translation: ptBR },
     },
-    fallbackLng: {
-      "pt-PT": ["pt-BR", "en"],
-      pt: ["pt-BR", "en"],
-      default: ["en"],
-    },
+    fallbackLng: "en",
     supportedLngs: locales,
     load: "currentOnly",
     defaultNS,
     detection: {
-      order: ["localStorage", "navigator"],
+      order: ["localStorage"],
       lookupLocalStorage: "locale",
       caches: ["localStorage"],
     },

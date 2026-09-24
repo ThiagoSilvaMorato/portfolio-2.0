@@ -39,7 +39,7 @@ Boas práticas obrigatórias para este projeto (React 19 + Vite + TS + Tailwind 
 
 ## i18n (i18next + react-i18next)
 
-- Locales: `en` (fallback) e `pt-BR`. Detecção: `localStorage → navigator` (chave `locale`), persiste no `localStorage`. Sem locale na URL.
+- Locales: `en` (padrão/fallback) e `pt-BR`. Detecção: só `localStorage` (chave `locale`) — sem detecção pelo navegador; sem preferência salva, usa `en`. Troca manual persiste no `localStorage`. Sem locale na URL.
 - Config em `src/i18n/index.ts`; carregada uma vez via `import "@/i18n"` no `main.tsx`.
 - **Nenhum texto visível hardcoded.** Toda string de UI vem de `t("contexto.chave")` do hook `useTranslation()` (`react-i18next`).
 - Mensagens agrupadas por tela/contexto em `src/i18n/en.json` e `src/i18n/pt-BR.json` (objeto aninhado: `{ nav: {...}, home: {...}, notFound: {...} }`). Chaves das duas devem ser idênticas.
