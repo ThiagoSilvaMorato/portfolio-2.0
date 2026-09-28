@@ -20,4 +20,11 @@ export const projects = [
     demoUrl: "https://todo-list-thiago-morato.vercel.app/",
     codeUrl: "https://github.com/ThiagoSilvaMorato/todo-list",
   },
+  {
+    title: "Frontend Reliability Lab",
+    descriptionKey: "projects.items.reliabilityLab.description",
+    tags: ["React", "TypeScript", "TanStack Query", "Zod", "MSW", "Playwright", "TailwindCSS"],
+    demoUrl: "https://frontend-reliability-lab.vercel.app/",
+    codeUrl: "https://github.com/ThiagoSilvaMorato/frontend-reliability-lab",
+  },
 ] as const;

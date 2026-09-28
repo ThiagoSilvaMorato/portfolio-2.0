@@ -60,6 +60,9 @@
       },
       "todo": {
         "description": "Uma aplicação simples de gerenciamento de tarefas que permite criar e excluir tarefas, com chamadas de API simuladas, estados de carregamento e persistência local via localStorage."
+      },
+      "reliabilityLab": {
+        "description": "Um laboratório sobre a base de uma Pokédex para simular falhas reais de API (timeouts, erros de servidor, respostas malformadas, offline) e observar como um frontend React detecta, tenta novamente e se recupera de cada uma delas."
       }
     }
   },

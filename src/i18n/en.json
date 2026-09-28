@@ -60,6 +60,9 @@
       },
       "todo": {
         "description": "A simple task management application that allows users to create and delete tasks, featuring simulated API calls, loading states and local persistence with localStorage."
+      },
+      "reliabilityLab": {
+        "description": "A Pokédex-backed lab for simulating real API failures (timeouts, server errors, malformed responses, offline) and observing how a React frontend detects, retries and recovers from each one."
       }
     }
   },
